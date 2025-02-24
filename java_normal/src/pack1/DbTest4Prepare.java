@@ -89,7 +89,7 @@ public class DbTest4Prepare {
 			//String sql2 = "select * from sangdata where code=" + co;	// 문자열 더하기 : 시큐어 코딩 가이드에 위배
 			String sql2 = "select * from sangdata where code=?"; 		// ? 연산자 사용
 			pstmt = conn.prepareStatement(sql2);
-			
+
 			Scanner sc = new Scanner(System.in);
 			System.out.print("번호 입력: ");
 			String co = sc.nextLine();
